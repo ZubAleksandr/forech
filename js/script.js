@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 	const test = document.querySelectorAll("input");
-		let mass = [test];
+	
 		console.log(test);
-		mass.forEach(function () {
+		test.forEach(function () {
 			const numA1 = parseInt(
 				form.querySelector('input[name="a1"]').value
 			);
