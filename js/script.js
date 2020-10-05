@@ -6,7 +6,7 @@ let itog = [];
 
 	for(let i = 0; i < 6; i++){
 		for(let k = i+1; k < 6; k++){
-			if(cof[i] == cof[k]){
+			if(cof[i] === cof[k]){
 				itog = cof[i] + cof[k];
 				console.log(itog);
 			}
