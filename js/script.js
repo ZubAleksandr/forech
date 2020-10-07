@@ -1,15 +1,12 @@
-let km = [1, 0.25, 0.5, 0.75, 1, 0.25]
+const km = [25, 45,  95, 125, 150, 200, 325, 250, 165, 350]
 
-let cof =[1.5, 1.5, 0.9, 1, 1.4, 1];
+const cof = [1, 1.5, 1,  1.5, 1.2, 1.5, 1 ,  0.5, 1.2, 1.5];
 
-let itog = [];
 
-	for(let i = 0; i < 6; i++){
-		for(let k = i+1; k < 6; k++){
-			if(cof[i] === cof[k]){
-				itog.push ( km[i] + km[k]);
-				console.log(itog);
-			}
-		}
-	}
-	
+const res = cof.reduce((a,v,i)=>(a[v]=(a[v]||0)+km[i],a),{});
+
+console.log(res);
+
+console.log(Object.values(res)); 
+
+
