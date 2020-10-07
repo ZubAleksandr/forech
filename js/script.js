@@ -9,7 +9,7 @@ const findMoreThanOne = (arr) => {
 		console.log(itog, "1");
 		for (let k = 0; k < arr.length; k++) {
 			console.log(itog, "2");
-			if (cof[i] === cof[k] && i !== k) {
+			if (cof[i] === cof[k] && k > i) {
 				//itog.push( km[i] + km[k]);
 				itog.push(cof[i]);
 				console.log(itog, "3");
