@@ -3,17 +3,11 @@ let km = [1, 0.25, 0.5, 0.75, 1, 0.25]
 
 let cof =[1.5, 1.5, 1.5, 1, 1.4, 1 , 131, 141 ,54 ,45 ,54 ,66];
 
-const findMoreThanOne = (arr) => {
+let findMoreThanOne = (arr) => {
 	let itog = [];
 	for (let i = 0; i < arr.length; i++) {
-		console.log(itog, "1");
-		for (let k = 0; k < arr.length; k++) {
-			console.log(itog, "2");
-			if (cof[i] === cof[k] && k > i) {
-				//itog.push( km[i] + km[k]);
-				itog.push(cof[i]);
-				console.log(itog, "3");
-			}
+		if(arr.filter(el=>el === arr[i]).length > 1){
+			itog.push(cof[i]);
 		}
 	}
 
