@@ -6,7 +6,7 @@ let findMoreThanOne = (arr) => {
 	let itog = [];
 	arr.forEach((value) => {
 		if (arr.filter((el) => el === value).length > 1) {
-			itog.push(cof[i]);
+			itog.push(value);
 		}
 	});
 
